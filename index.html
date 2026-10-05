@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/AATHILDUCKY/ethical-hacking-short-notes/main/aathil%20ducky.png"
+      type="image/x-icon"
+    />
+    <title></title>
+    <meta
+      name="description"
+      content="Join Aathil and Ducky on their beautiful love journey with Shaniya.(2023.10.21)"
+    />
+    <meta
+      name="keywords"
+      content=""
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .love-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: all 0.3s ease;
+      }
+      .love-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(236, 72, 153, 0.3);
+      }
+      .highlight {
+        color: #ec4899;
+        font-weight: bold;
+      }
+      .heart {
+        color: #ec4899;
+        animation: pulse 1.5s infinite;
+      }
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+      <header class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Саша <span class="heart">❤</span> Фелиция
+        </h1>
+        <p class="text-xl text-pink-400">Наша дружба с 11.09.2026</p>
+      </header>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <!-- Love Duration Card -->
+        <div class="love-card rounded-xl p-6">
+          <h2 class="text-2xl font-bold mb-4 text-center">Наша дружба</h2>
+          <div class="space-y-2">
+            <p><span class="highlight" id="love-years">0</span> год</p>
+            <p><span class="highlight" id="love-days">0</span> дня</p>
+            <p><span class="highlight" id="love-hours">0</span> часов</p>
+            <p><span class="highlight" id="love-minutes">0</span> минут</p>
+            <p><span class="highlight" id="love-seconds">0</span> секунд</p>
+          </div>
+        </div>
+
+        <!-- Next Anniversary Card -->
+        <div class="love-card rounded-xl p-6">
+          <h2 class="text-2xl font-bold mb-4 text-center">Годовщина дружбы</h2>
+          <div class="space-y-2">
+            <p><span class="highlight" id="anniv-days">0</span> дня</p>
+            <p><span class="highlight" id="anniv-hours">0</span> часов</p>
+            <p><span class="highlight" id="anniv-minutes">0</span> минут</p>
+            <p><span class="highlight" id="anniv-seconds">0</span> секунд</p>
+          </div>
+        </div>
+
+        <!-- Feli's Birthday Card -->
+        <div class="love-card rounded-xl p-6">
+          <h2 class="text-2xl font-bold mb-4 text-center">День Рождения Фелиции</h2>
+          <p class="mb-4">Октябрь 19 (1995)</p>
+          <div class="space-y-2">
+            <p><span class="highlight" id="Feli-days">0</span> дни</p>
+            <p><span class="highlight" id="Feli-hours">0</span> часы</p>
+            <p><span class="highlight" id="Feli-minutes">0</span> минуты</p>
+          </div>
+        </div>
+
+        <!-- Sasha's Birthday Card -->
+        <div class="love-card rounded-xl p-6">
+          <h2 class="text-2xl font-bold mb-4 text-center">День Рождения Саши</h2>
+          <p class="mb-4">Сентябрь 03 (2001)</p>
+          <div class="space-y-2">
+            <p><span class="highlight" id="Sasha-days">0</span> days</p>
+            <p><span class="highlight" id="Sasha-hours">0</span> hours</p>
+            <p><span class="highlight" id="Sasha-minutes">0</span> minutes</p>
+          </div>
+        </div>
+
+        <!-- Meeting Date Card -->
+        <div class="love-card rounded-xl p-6">
+          <h2 class="text-2xl font-bold mb-4 text-center">Особенная дата</h2>
+          <p class="mb-4">Октябрь 23 (2026)</p>
+          <p><span class="highlight" id="meet-days">0</span> дня</p>
+            <p><span class="highlight" id="meet-hours">0</span> часов</p>
+            <p><span class="highlight" id="meet-minutes">0</span> минут</p>
+            <p><span class="highlight" id="meet-seconds">0</span> секунд</p>
+        </div>
+
+        <!-- Love Message Card -->
+        <div class="love-card rounded-xl p-6 text-center">
+          <div class="text-center">
+            <p class="text-2xl mb-4">Каждый момент с тобой особенный</p>
+            <span class="heart text-4xl">❤</span>
+          </div>
+        </div>
+      
+
+      <footer class="text-center text-gray-400 mt-12">
+        <p>Created with love by Sasha</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
