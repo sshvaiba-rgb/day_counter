@@ -14,7 +14,7 @@ function updateAllCounters() {
   updateNextAnniversary(now);
 
   // Update Next Meeting
-  updateNextMeeting(now);
+  //updateNextMeeting(now);
   
   // Update Фели's Birthday Countdown
   updateBirthdayCountdown(now, FeliBirthday, "Feli");
