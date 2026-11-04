@@ -13,10 +13,7 @@
       name="description"
       content="Join Aathil and Ducky on their beautiful love journey with Shaniya.(2023.10.21)"
     />
-    <meta
-      name="keywords"
-      content=""
-    />
+    <meta name="keywords" content="" />
     <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
@@ -56,45 +53,51 @@
         <p class="text-xl text-pink-400">Наша дружба с 11.09.2026</p>
       </header>
 
+      <!-- ====== СЕТКА: первые 3 карточки ====== -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
         <!-- Love Duration Card -->
         <div class="love-card rounded-xl p-6">
           <h2 class="text-2xl font-bold mb-4 text-center">Наша дружба</h2>
           <div class="space-y-2">
-            <p><span class="highlight" id="love-years">0</span> год</p>
-            <p><span class="highlight" id="love-days">0</span> дня</p>
-            <p><span class="highlight" id="love-hours">0</span> часов</p>
-            <p><span class="highlight" id="love-minutes">0</span> минут</p>
-            <p><span class="highlight" id="love-seconds">0</span> секунд</p>
+            <p><span class="highlight" id="love-years">0</span> year</p>
+            <p><span class="highlight" id="love-days">0</span> days</p>
+            <p><span class="highlight" id="love-hours">0</span> hours</p>
+            <p><span class="highlight" id="love-minutes">0</span> minutes</p>
+            <p><span class="highlight" id="love-seconds">0</span> seconds</p>
           </div>
         </div>
 
         <!-- Next Anniversary Card -->
         <div class="love-card rounded-xl p-6">
           <h2 class="text-2xl font-bold mb-4 text-center">Годовщина дружбы</h2>
+          <p class="mb-4 text-center">Сентябрь 11 (2026)</p>
           <div class="space-y-2">
-            <p><span class="highlight" id="anniv-days">0</span> дня</p>
-            <p><span class="highlight" id="anniv-hours">0</span> часов</p>
-            <p><span class="highlight" id="anniv-minutes">0</span> минут</p>
-            <p><span class="highlight" id="anniv-seconds">0</span> секунд</p>
+            <p><span class="highlight" id="anniv-days">0</span> days</p>
+            <p><span class="highlight" id="anniv-hours">0</span> hours</p>
+            <p><span class="highlight" id="anniv-minutes">0</span> minutes</p>
+            <p><span class="highlight" id="anniv-seconds">0</span> seconds</p>
           </div>
         </div>
 
         <!-- Feli's Birthday Card -->
         <div class="love-card rounded-xl p-6">
-          <h2 class="text-2xl font-bold mb-4 text-center">День Рождения Фелиции</h2>
-          <p class="mb-4">Октябрь 19 (1995)</p>
+          <h2 class="text-2xl font-bold mb-4 text-center">День Рождения и Крещения Фелиции</h2>
+          <p class="mb-4 text-center">Октябрь 19 (1995)</p>
           <div class="space-y-2">
-            <p><span class="highlight" id="Feli-days">0</span> дни</p>
-            <p><span class="highlight" id="Feli-hours">0</span> часы</p>
-            <p><span class="highlight" id="Feli-minutes">0</span> минуты</p>
+            <p><span class="highlight" id="Feli-days">0</span> days</p>
+            <p><span class="highlight" id="Feli-hours">0</span> hours</p>
+            <p><span class="highlight" id="Feli-minutes">0</span> minutes</p>
           </div>
         </div>
+      </div>
+      <!-- ====== конец сетки ====== -->
 
+      <!-- ====== Две карточки Саши — по центру, в одной строке ====== -->
+      <div class="flex flex-wrap justify-center gap-6 mb-12">
         <!-- Sasha's Birthday Card -->
-        <div class="love-card rounded-xl p-6">
+        <div class="love-card rounded-xl p-6 w-full md:w-80">
           <h2 class="text-2xl font-bold mb-4 text-center">День Рождения Саши</h2>
-          <p class="mb-4">Сентябрь 03 (2001)</p>
+          <p class="mb-4 text-center">Сентябрь 03 (2001)</p>
           <div class="space-y-2">
             <p><span class="highlight" id="Sasha-days">0</span> days</p>
             <p><span class="highlight" id="Sasha-hours">0</span> hours</p>
@@ -102,20 +105,34 @@
           </div>
         </div>
 
-        <!-- Meeting Date Card -->
-        <div class="love-card rounded-xl p-6">
-          <h2 class="text-2xl font-bold mb-4 text-center">Особенная дата</h2>
-          <p class="mb-4">Совсем скоро !</p>
-        </div>
-
-        <!-- Love Message Card -->
-        <div class="love-card rounded-xl p-6 text-center">
-          <div class="text-center">
-            <p class="text-2xl mb-4">Каждый момент с тобой особенный</p>
-            <span class="heart text-4xl">❤</span>
+        <!-- Sasha's Christening Card -->
+        <div class="love-card rounded-xl p-6 w-full md:w-80">
+          <h2 class="text-2xl font-bold mb-4 text-center">День Крещения Саши</h2>
+          <p class="mb-4 text-center">Июнь 20 (2021)</p>
+          <div class="space-y-2">
+            <p><span class="highlight" id="christ-days">0</span> days</p>
+            <p><span class="highlight" id="christ-hours">0</span> hours</p>
+            <p><span class="highlight" id="christ-minutes">0</span> minutes</p>
           </div>
         </div>
-      
+      </div>
+
+      <!-- ====== «Особенная дата» — по центру ====== -->
+      <div class="flex justify-center mb-12">
+        <div class="love-card rounded-xl p-6 w-full md:w-80">
+          <h2 class="text-2xl font-bold mb-4 text-center">Особенная дата</h2>
+          <p class="mb-4 text-center">29 октября 2026 года</p>
+          <p class="mb-4 text-center">Дополнения совсем скоро !</p>
+        </div>
+      </div>
+
+      <!-- ====== «Каждый момент…» — по центру, не растягивается ====== -->
+      <div class="flex justify-center mb-12">
+        <div class="love-card rounded-xl p-6 text-center w-full md:w-80">
+          <p class="text-2xl mb-4">Каждый момент с тобой особенный</p>
+          <span class="heart text-4xl">❤</span>
+        </div>
+      </div>
 
       <footer class="text-center text-gray-400 mt-12">
         <p>Created with love by Sasha</p>
