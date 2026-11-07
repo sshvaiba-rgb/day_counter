@@ -3,7 +3,7 @@ const FeliBirthday = new Date(1995, 9, 19, 23, 0, 0); // месяц 0-11 → 9 =
 const SashaBirthday = new Date(2001, 8, 3, 0, 0, 0);  // 8 = сентябрь
 const SashaChristeningDate = new Date(2021, 5, 20, 0, 0, 0);  // 5 = июнь
 const loveStartDate = new Date(2026, 8, 11, 13, 0, 0); // 8 = сентябрь
-const loveMeetDate = new Date(2026, 9, 23, 13, 0, 0); // 8 = сентябрь
+// const loveMeetDate = new Date(2026, 9, 23, 13, 0, 0); // 8 = сентябрь
 
 function updateAllCounters() {
   const now = new Date();
@@ -23,8 +23,8 @@ function updateAllCounters() {
   // Update Саша's Christening Countdown
   updateSashaChristeningCountdown(now, SashaChristeningDate, "Sasha");
 
-  // Update Next Meeting
-  updateNextMeeting(now);
+  // // Update Next Meeting
+  // updateNextMeeting(now);
 }
 
 function updateLoveDuration(now) {
@@ -77,27 +77,27 @@ function updateNextAnniversary(now) {
   document.getElementById("anniv-seconds").textContent = seconds.toString().padStart(2, "0");
 }
 
-function updateNextMeeting(now) {
-  // Get next anniversary date (this year or next year)
-  const nextMeet = new Date(loveMeetDate);
-  nextMeet.setFullYear(now.getFullYear());
+// function updateNextMeeting(now) {
+//   // Get next anniversary date (this year or next year)
+//   const nextMeet = new Date(loveMeetDate);
+//   nextMeet.setFullYear(now.getFullYear());
   
-  if (now > nextMeet) {
-    nextMeet.setFullYear(now.getFullYear() + 1);
-  }
+//   if (now > nextMeet) {
+//     nextMeet.setFullYear(now.getFullYear() + 1);
+//   }
   
-  const difference = nextMeet - now;
+//   const difference = nextMeet - now;
   
-  const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+//   const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+//   const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//   const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+//   const seconds = Math.floor((difference % (1000 * 60)) / 1000);
   
-  document.getElementById("meet-days").textContent = days;
-  document.getElementById("meet-hours").textContent = hours.toString().padStart(2, "0");
-  document.getElementById("meet-minutes").textContent = minutes.toString().padStart(2, "0");
-  document.getElementById("meet-seconds").textContent = seconds.toString().padStart(2, "0");
-}
+//   document.getElementById("meet-days").textContent = days;
+//   document.getElementById("meet-hours").textContent = hours.toString().padStart(2, "0");
+//   document.getElementById("meet-minutes").textContent = minutes.toString().padStart(2, "0");
+//   document.getElementById("meet-seconds").textContent = seconds.toString().padStart(2, "0");
+// }
 
 
 function updateSashaChristeningCountdown(now) {
